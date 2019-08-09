@@ -13,5 +13,10 @@ namespace WebsiteWAPP
         {
 
         }
+
+        protected void sign_up_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
