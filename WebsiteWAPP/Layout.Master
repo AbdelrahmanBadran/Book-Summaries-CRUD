@@ -2,25 +2,26 @@
     Inherits="WebsiteWAPP.Site1" %>
 
 <!DOCTYPE html>
-<html lang="en-US">
-   
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
     <title>BookSums</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Author" content="Abdelrahman Badran" />
     <meta name="keywords" content="books,summaries,reading,self help, education, fition, non fiction" />
-
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="Style1.css"/>
+    <link rel="stylesheet" href="masterStyle.css" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 </head>
 
-<body>
-    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+<body class="body-container">
+    <asp:ContentPlaceHolder ID="Header" runat="server">
         <header>
             <div class = "nav-container">
                 <h1>Book Sums</h1>
@@ -36,82 +37,14 @@
     </asp:ContentPlaceHolder>
 
 
-    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        <main>
-        <!-- The main div home -->
-        <div class ="home">
-            <div class="side-nav">
-                <nav id = "editor-nav">
-                    <h2><b>Editor's Choice</b></h2>
-                    <ul id = "nav-container">
-                        <li><a href="#">The 7 Habits of Highly Effective People</a></li>
-                        <li><a href="#">101 Positive Thoughts to Change Your Life</a></li>
-                        <li><a href="#">The Last Self-Help Book You'll Ever Need</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <asp:ContentPlaceHolder ID="Main" runat="server">
 
-            <!--The Caousel controls-->
-            <div class="slideshow">
-                <div id="mycarousel" class="container carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators ">
-                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1"></li>
-                        <li data-target="#mycarousel" data-slide-to="2"></li>
-                    </ul>
-
-                    <!--The Caousel images and captions-->
-                    <div class="carousel-inner">
-                        <figure class="item active">
-                            <img src="img/1.jpg" alt="Book 1" /> <figcaption class="carousel-caption">2017 Cars Promise to be More Fuel Efficient Than Ever.</figcaption>
-                        </figure>
-                        <figure class="item">
-                            <img src="img/2.jpg" alt="Book 2" /> <figcaption class="carousel-caption">Hurricane Threatens to Touch Down on the East Coast This Weekend.</figcaption>
-                        </figure>
-                        <figure class="item">
-                            <img src="img/3.jpg" alt="Book 3" /> <figcaption class="carousel-caption">Many Doctors are Moving to Digital Health Records, Are You Prepared?</figcaption>
-                        </figure>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span> </a><a class="right carousel-control" href="#mycarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span> </a>
-                </div>
-            </div>
-            <div class="ads">
-                <aside>
-                    <p>
-                        This is the aside element which should contain ads</p>
-                </aside>
-            </div>
-        </div>
-        </main>
     </asp:ContentPlaceHolder>
 
     
-    <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+    <asp:ContentPlaceHolder ID="Footer" runat="server">
         <footer>
-        <div class="panel panel-default">
-            <div class="panel-heading">Sign up For Our Emails</div>
-            
-            <form class="form-horizontal panel-heading" runat="server">
-                <asp:FieldTemplateUserControl runat="server"/>
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <asp:Label runat="server">Email Address</asp:Label>
-                    <input id="Email" type="email" required="required" runat="server" />
-                    <asp:Label runat="server">Delivery Preference: </asp:Label>
-                    <asp:DropDownList runat="server">
-                        <asp:ListItem>Daily</asp:ListItem>
-                        <asp:ListItem>Weekly</asp:ListItem>
-                        <asp:ListItem>Monthly</asp:ListItem>
-                    </asp:DropDownList>
-                    <asp:Button runat="server" ID="sign_up" OnClick="sign_up_Click" Text="Sign Up"/>
-                </fieldset>
-            </form>
-
-        </div>
             <em>Copyright &copy; 2019, Badran </em>
-
         </footer>
     </asp:ContentPlaceHolder>
 

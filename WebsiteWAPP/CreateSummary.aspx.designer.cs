@@ -10,6 +10,6 @@
 namespace WebsiteWAPP {
     
     
-    public partial class Home {
+    public partial class CreateSummary {
     }
 }

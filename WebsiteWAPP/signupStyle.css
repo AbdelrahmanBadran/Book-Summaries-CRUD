@@ -1,0 +1,9 @@
+﻿body{
+    width: 80%;
+    display:flex;
+}
+
+.signup-container {
+    margin: auto;
+    margin-top: 2em;
+}
