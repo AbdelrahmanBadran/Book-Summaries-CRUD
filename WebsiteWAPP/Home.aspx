@@ -4,6 +4,7 @@
 <main>
     <!-- The main div home -->
     <div class="home">
+        <div class ="upper-body">
         <nav class="side-nav">
             <h2><strong>Editor's Choice</strong></h2>
             <ul id="editor-container">
@@ -55,15 +56,16 @@
                 <p>This is the aside element which should contain ads</p>
             </aside>
         </div>
-
+     </div>
         <!--The Book sliders-->
-        <div class="carousel book-slider1">
-            <h2><strong>First Book Carousel</strong></h2>
-        </div>
-
-        <div class="carousel book-slider2">
-            <h2><strong>Second Book Carousel</strong></h2>
-        </div>
+        <div class ="book-container">
+            <div class=" book-slider1">
+                <h2><strong>First Book Carousel</strong></h2>
+            </div>
+            <div class="book-slider2">
+                <h2><strong>Second Book Carousel</strong></h2>
+            </div>
+       </div>
     </div>
     </main>
 </asp:Content>

@@ -26,11 +26,11 @@
             <div class = "nav-container">
                 <h1>Book Sums</h1>
                 <ul class="topnav show-desktop hide-mobile">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Summaries</a></li>
-                    <li><a href="#">Create</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><asp:LinkButton class="active" OnClick="Home_Click" runat="server"> Home</asp:LinkButton></li>
+                    <li><asp:LinkButton  OnClick="Summaries_Click" runat="server"> Summaries</asp:LinkButton></li>
+                    <li><asp:LinkButton OnClick="Create_Click" runat="server"> Create</asp:LinkButton></li>
+                    <li><asp:LinkButton  OnClick="About_Click" runat="server"> About</asp:LinkButton></li>
+                    <li><asp:LinkButton  OnClick="Contact_Click" runat="server"> Contact</asp:LinkButton></li>
                 </ul>
             </div>
         </header>
