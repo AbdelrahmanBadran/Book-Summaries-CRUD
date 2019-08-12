@@ -1,35 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="createSummaries.aspx.cs" Inherits="WebsiteWAPP.createSummaries" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Layout.Master"  AutoEventWireup="true" CodeBehind="createSummaries.aspx.cs" Inherits="WebsiteWAPP.createSummaries" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-    <title>CreateSums</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="masterStyle.css" />
-</head>
-
-<body>
-        <header>
-            <div class="nav-container">
-                <h1>Book Sums</h1>
-                    <ul class="topnav show-desktop hide-mobile">
-                        <li><a>
-                             Home</a></li>
-                        <li><a>
-                            Summaries</a></li>
-                        <li><a class="active">
-                             Create</a></li>
-                        <li><a>
-                            About</a></li>
-                        <li><a>
-                            Contact</a></li>
-                    </ul>
-            </div>
-        </header>
-
-
-        <form id="form1" runat="server">
+<asp:content contentplaceholderid="Main" runat="server">
+  
+    <div class = "form-container">
             <p>
                 <asp:Label ID="bookTitle" runat="server" Text="Book Title"></asp:Label>
                 <asp:TextBox ID="book_title" runat="server"></asp:TextBox>
@@ -71,12 +44,5 @@
 
                 <asp:Button ID="submit" runat="server" OnClick="submit_Click" Text="Submit" />
             </p>
-
-        </form>
-
-        <footer>
-            <em>Copyright &copy; 2019, Badran </em>
-        </footer>    
-
-</body>
-</html>
+    </div>
+</asp:content>

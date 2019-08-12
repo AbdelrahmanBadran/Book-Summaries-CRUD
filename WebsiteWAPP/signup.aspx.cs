@@ -15,13 +15,13 @@ namespace WebsiteWAPP
 
         protected void Register_Click(object sender, EventArgs e)
         {
-            if (Email_Is_Valid())
+            if (Email_Is_Free())
             {
                 Sign_Up();
             }
         }
 
-        private bool Email_Is_Valid()
+        private bool Email_Is_Free()
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             
@@ -87,8 +87,7 @@ namespace WebsiteWAPP
             {
                 Signup_Status.Text = "Sorry, Sign Up Wasn't successfull";
                 used_email.ForeColor = System.Drawing.Color.Red;
-                //Response.Redirect("signup.aspx");
-                Response.Write("Error: " + ex.ToString());
+                Response.Redirect("signup.aspx");
             }
         }
 

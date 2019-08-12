@@ -12,19 +12,24 @@ namespace WebsiteWAPP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["user_id"] != null)
+
+
+            if (Session["user_email"] != null)
             {
-                user_id.Text = Session["user_id"].ToString();
-                user_id.Enabled = false;
+                user_email.Text = Session["user_id"].ToString();
+
+                //user_email.Enabled = false;
+                //user_email.Visible = false;
+                //string userEmail = Session["user_email"] as string;
+               //user.Text = (user_email != null) ? "Account" : "Guest";
             }
-            user_id.Visible = false;
+
         }
 
         protected void Home_Click(object sender, EventArgs e)
         {
             Response.Redirect("Home.aspx");
         }
-
 
         protected void Summaries_Click(object sender, EventArgs e)
         {
@@ -41,19 +46,20 @@ namespace WebsiteWAPP
             Response.Redirect("contact.aspx");
         }
 
-        protected void About_Click(object sender, EventArgs e)
+        protected void Profile_Click(object sender, EventArgs e)
         {
             Response.Redirect("about.aspx");
         }
 
         protected void Login_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("login.aspx");
         }
 
         protected void Signup_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("signup.aspx");
         }
+
     }
 }

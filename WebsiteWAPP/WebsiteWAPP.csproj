@@ -78,6 +78,8 @@
     <Content Include="img\2.jpg" />
     <Content Include="img\3.jpg" />
     <Content Include="login.aspx" />
+    <Content Include="manage.aspx" />
+    <Content Include="profile.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="libman.json" />
     <Content Include="masterStyle.css" />
@@ -112,6 +114,20 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage.aspx.cs">
+      <DependentUpon>manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage.aspx.designer.cs">
+      <DependentUpon>manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Layout.Master.cs">

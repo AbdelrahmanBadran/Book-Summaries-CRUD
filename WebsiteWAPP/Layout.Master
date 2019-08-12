@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
+
 <head runat="server">
     <title>BookSums</title>
     <meta charset="utf-8" />
@@ -13,31 +14,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="masterStyle.css" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 </head>
 
+
 <body class="body-container">
+    <form id="form1" runat="server">
+
     <asp:ContentPlaceHolder ID="Header" runat="server">
         <header>
             <div class = "nav-container">
-                <h1>Book Sums</h1>
-                <form runat="server">
-                    <asp:TextBox ID="user_id" runat="server" class="hide"></asp:TextBox>
+                <h1>Book Sums</h1>    
+                <asp:TextBox ID="user_email" class= "hide" runat="server"></asp:TextBox>
+                <%--<asp:TextBox ID="user_id" runat="server" class="hide"></asp:TextBox>--%>
+
                 <ul class="topnav">
                     <li><a><asp:LinkButton class="active" OnClick="Home_Click" runat="server"> Home</asp:LinkButton></a></li>
                     <li><a><asp:LinkButton  OnClick="Summaries_Click" runat="server"> Summaries</asp:LinkButton></a></li>
                     <li><a><asp:LinkButton OnClick="Create_Click" runat="server"> Create</asp:LinkButton></a></li>
-                    <li><a><asp:LinkButton  OnClick="About_Click" runat="server"> About Us</asp:LinkButton></a></li>
                     <li><a><asp:LinkButton  OnClick="Contact_Click" runat="server"> Contact Us</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton OnClick="Profile_Click" runat="server"> Profile</asp:LinkButton></a></li>
                 </ul>
-                    <ul class="top-right">
-                    <li><a><asp:LinkButton OnClick="Login_Click"  runat="server">Login</asp:LinkButton></a></li>
-                    <li><a><asp:LinkButton OnClick="Signup_Click" runat="server">Sign Up</asp:LinkButton></a></li>
-                    </ul>
-                </form>
+                <ul class="top-right">
+                <li><a><asp:LinkButton ID="Login" OnClick="Login_Click"  runat="server">Login</asp:LinkButton></a></li>
+                <li><a><asp:LinkButton ID="SignUp" onClick="Signup_Click" runat="server">Sign Up</asp:LinkButton></a></li>
+                <%--<li><a><asp:LinkButton ID="user" OnClick="Account_Click" runat="server">Account</asp:LinkButton></a></li>--%>
+                </ul>
+                
             </div>
         </header>
     </asp:ContentPlaceHolder>
@@ -50,11 +56,15 @@
     </asp:ContentPlaceHolder>
 
     
+
     <asp:ContentPlaceHolder ID="Footer" runat="server">
         <footer>
             <em>Copyright &copy; 2019, Badran </em>
         </footer>
     </asp:ContentPlaceHolder>
 
+
+    </form>
 </body>
+
 </html>

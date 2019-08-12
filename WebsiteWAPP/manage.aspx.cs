@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebsiteWAPP
 {
-    public partial class CreateSummary : System.Web.UI.Page
+    public partial class manage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

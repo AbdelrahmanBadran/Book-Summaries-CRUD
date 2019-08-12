@@ -39,14 +39,15 @@ namespace WebsiteWAPP
 
             if (dt.Rows.Count > 0)
             {
-                this.Session["user_name"] = user_email;
+                this.Session["user_email"] = user_email;
                 Response.Redirect("Home.aspx");
             }
 
             else
             {
                 hidden_label.Text = "Incorrect email or password";
-                hidden_label.ForeColor = System.Drawing.Color.Red;
+                hidden_label.ForeColor = System.Drawing.Color.Black;
+                Response.Redirect("login.aspx");
             }
             con.Close();
         }

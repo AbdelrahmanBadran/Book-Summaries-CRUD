@@ -57,15 +57,28 @@
             </aside>
         </div>
      </div>
-        <!--The Book sliders-->
-        <div class ="book-container">
-            <div class=" book-slider1">
-                <h2><strong>First Book Carousel</strong></h2>
-            </div>
-            <div class="book-slider2">
-                <h2><strong>Second Book Carousel</strong></h2>
-            </div>
-       </div>
+
+    <!--The Book View-->
+    <div class ="book-container">
+        <%--<div class=" book-slider1">--%>
+        <div>
+            <asp:PlaceHolder ID="Education" runat="server"></asp:PlaceHolder>
+        </div>
+        
+        <div>
+            <asp:PlaceHolder ID="Fiction" runat="server"></asp:PlaceHolder>
+        </div>
+
+        <div>
+            <asp:PlaceHolder ID="Non_Fiction" runat="server"></asp:PlaceHolder>
+        </div>
+
+        <div>
+            <asp:PlaceHolder ID="Self_Help" runat="server"></asp:PlaceHolder>
+        </div>
+
+    </div>
+
     </div>
 </asp:Content>
 

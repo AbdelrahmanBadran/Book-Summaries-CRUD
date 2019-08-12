@@ -13,6 +13,15 @@ namespace WebsiteWAPP {
     public partial class Site1 {
         
         /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
         /// Header control.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,31 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
         
         /// <summary>
-        /// user_id control.
+        /// user_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_id;
+        protected global::System.Web.UI.WebControls.TextBox user_email;
+        
+        /// <summary>
+        /// Login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton Login;
+        
+        /// <summary>
+        /// SignUp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton SignUp;
         
         /// <summary>
         /// Main control.
