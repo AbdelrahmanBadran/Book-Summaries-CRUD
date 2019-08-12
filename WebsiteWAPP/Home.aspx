@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebsiteWAPP.Home" %>
 
+
 <asp:Content ContentPlaceHolderID="Main" runat="server">
-<main>
     <!-- The main div home -->
     <div class="home">
         <div class ="upper-body">
@@ -67,7 +67,6 @@
             </div>
        </div>
     </div>
-    </main>
 </asp:Content>
 
 

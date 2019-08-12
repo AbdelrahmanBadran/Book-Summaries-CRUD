@@ -10,7 +10,7 @@
 namespace WebsiteWAPP {
     
     
-    public partial class CreateSummary {
+    public partial class createSummaries {
         
         /// <summary>
         /// form1 control.
@@ -128,5 +128,14 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox summary_data;
+        
+        /// <summary>
+        /// submit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submit;
     }
 }

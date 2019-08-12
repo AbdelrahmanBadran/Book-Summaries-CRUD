@@ -71,6 +71,7 @@
     <Content Include="App_Data\book_sums_log.ldf">
       <DependentUpon>book_sums.mdf</DependentUpon>
     </Content>
+    <Content Include="createSummaries.aspx" />
     <Content Include="CreateSummary.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="img\1.jpg" />
@@ -84,6 +85,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="createSummaries.aspx.cs">
+      <DependentUpon>createSummaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createSummaries.aspx.designer.cs">
+      <DependentUpon>createSummaries.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreateSummary.aspx.cs">
       <DependentUpon>CreateSummary.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

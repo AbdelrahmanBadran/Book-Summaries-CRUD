@@ -10,14 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Author" content="Abdelrahman Badran" />
     <meta name="keywords" content="books,summaries,reading,self help, education, fition, non fiction" />
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="masterStyle.css" />
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 </head>
 
 <body class="body-container">
@@ -25,13 +24,20 @@
         <header>
             <div class = "nav-container">
                 <h1>Book Sums</h1>
-                <ul class="topnav show-desktop hide-mobile">
-                    <li><asp:LinkButton class="active" OnClick="Home_Click" runat="server"> Home</asp:LinkButton></li>
-                    <li><asp:LinkButton  OnClick="Summaries_Click" runat="server"> Summaries</asp:LinkButton></li>
-                    <li><asp:LinkButton OnClick="Create_Click" runat="server"> Create</asp:LinkButton></li>
-                    <li><asp:LinkButton  OnClick="About_Click" runat="server"> About</asp:LinkButton></li>
-                    <li><asp:LinkButton  OnClick="Contact_Click" runat="server"> Contact</asp:LinkButton></li>
+                <form runat="server">
+                    <asp:TextBox ID="user_id" runat="server" class="hide"></asp:TextBox>
+                <ul class="topnav">
+                    <li><a><asp:LinkButton class="active" OnClick="Home_Click" runat="server"> Home</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton  OnClick="Summaries_Click" runat="server"> Summaries</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton OnClick="Create_Click" runat="server"> Create</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton  OnClick="About_Click" runat="server"> About Us</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton  OnClick="Contact_Click" runat="server"> Contact Us</asp:LinkButton></a></li>
                 </ul>
+                    <ul class="top-right">
+                    <li><a><asp:LinkButton OnClick="Login_Click"  runat="server">Login</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton OnClick="Signup_Click" runat="server">Sign Up</asp:LinkButton></a></li>
+                    </ul>
+                </form>
             </div>
         </header>
     </asp:ContentPlaceHolder>
@@ -39,6 +45,8 @@
 
     <asp:ContentPlaceHolder ID="Main" runat="server">
 
+        <!--Other pages can add here--->
+    
     </asp:ContentPlaceHolder>
 
     
