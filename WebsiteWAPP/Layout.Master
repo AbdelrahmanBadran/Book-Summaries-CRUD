@@ -13,6 +13,7 @@
     <meta name="keywords" content="books,summaries,reading,self help, education, fition, non fiction" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="masterStyle.css" />
+    <link rel="stylesheet" href="other.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -39,8 +40,12 @@
                     <li><a><asp:LinkButton OnClick="Profile_Click" runat="server"> Profile</asp:LinkButton></a></li>
                 </ul>
                 <ul class="top-right">
+                
+                    <li><a><asp:LinkButton ID="SignUp" OnClick="Signup_Click" runat="server">Sign Up</asp:LinkButton></a></li>
                 <li><a><asp:LinkButton ID="Login" OnClick="Login_Click"  runat="server">Login</asp:LinkButton></a></li>
-                <li><a><asp:LinkButton ID="SignUp" onClick="Signup_Click" runat="server">Sign Up</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton ID="Logout" OnClick="Logout_Click" runat="server">Logout</asp:LinkButton></a></li>
+                
+
                 <%--<li><a><asp:LinkButton ID="user" OnClick="Account_Click" runat="server">Account</asp:LinkButton></a></li>--%>
                 </ul>
                 

@@ -14,6 +14,13 @@ namespace WebsiteWAPP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string logged_in = Session["user_email"] as String;
+
+            if (Session["user_email"] != null)
+            {
+                Response.Redirect("home.aspx");
+
+            }
 
         }
 

@@ -71,35 +71,43 @@
     <Content Include="App_Data\book_sums_log.ldf">
       <DependentUpon>book_sums.mdf</DependentUpon>
     </Content>
+    <Content Include="contact.aspx" />
     <Content Include="createSummaries.aspx" />
-    <Content Include="CreateSummary.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="img\1.jpg" />
-    <Content Include="img\2.jpg" />
-    <Content Include="img\3.jpg" />
+    <Content Include="books\1.jpg" />
+    <Content Include="books\2.jpg" />
+    <Content Include="books\3.jpg" />
+    <Content Include="img\cancel.png" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\add.png" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\save.png" />
     <Content Include="login.aspx" />
-    <Content Include="manage.aspx" />
+    <Content Include="manageBooks.aspx" />
+    <Content Include="manageSums.aspx" />
+    <Content Include="other.css" />
     <Content Include="profile.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="libman.json" />
     <Content Include="masterStyle.css" />
     <Content Include="signupStyle.css" />
+    <Content Include="summaries.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="createSummaries.aspx.cs">
       <DependentUpon>createSummaries.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="createSummaries.aspx.designer.cs">
       <DependentUpon>createSummaries.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CreateSummary.aspx.cs">
-      <DependentUpon>CreateSummary.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CreateSummary.aspx.designer.cs">
-      <DependentUpon>CreateSummary.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -115,12 +123,19 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="manage.aspx.cs">
-      <DependentUpon>manage.aspx</DependentUpon>
+    <Compile Include="manageBooks.aspx.cs">
+      <DependentUpon>manageBooks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="manage.aspx.designer.cs">
-      <DependentUpon>manage.aspx</DependentUpon>
+    <Compile Include="manageBooks.aspx.designer.cs">
+      <DependentUpon>manageBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manageSums.aspx.cs">
+      <DependentUpon>manageSums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageSums.aspx.designer.cs">
+      <DependentUpon>manageSums.aspx</DependentUpon>
     </Compile>
     <Compile Include="profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>
@@ -143,6 +158,13 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="summaries.aspx.cs">
+      <DependentUpon>summaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="summaries.aspx.designer.cs">
+      <DependentUpon>summaries.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

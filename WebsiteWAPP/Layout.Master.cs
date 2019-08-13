@@ -16,12 +16,11 @@ namespace WebsiteWAPP
 
             if (Session["user_email"] != null)
             {
-                user_email.Text = Session["user_id"].ToString();
-
+                //user_email.Text = Session["user_email"].ToString();
                 //user_email.Enabled = false;
                 //user_email.Visible = false;
                 //string userEmail = Session["user_email"] as string;
-               //user.Text = (user_email != null) ? "Account" : "Guest";
+                //user.Text = (user_email != null) ? "Account" : "Guest";
             }
 
         }
@@ -48,7 +47,7 @@ namespace WebsiteWAPP
 
         protected void Profile_Click(object sender, EventArgs e)
         {
-            Response.Redirect("about.aspx");
+            Response.Redirect("profile.aspx");
         }
 
         protected void Login_Click(object sender, EventArgs e)
@@ -59,6 +58,11 @@ namespace WebsiteWAPP
         protected void Signup_Click(object sender, EventArgs e)
         {
             Response.Redirect("signup.aspx");
+        }
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            this.Session.Abandon();
+            Response.Redirect("home.aspx");
         }
 
     }

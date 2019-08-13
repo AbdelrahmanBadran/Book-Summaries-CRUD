@@ -14,13 +14,14 @@
             </p>
             <p>
 
-                <asp:Label ID="categry" runat="server" Text="Category"></asp:Label>
-                <asp:DropDownList ID="category_id" runat="server">
-                    <asp:ListItem Value="1">Education</asp:ListItem>
-                    <asp:ListItem Value="2">Fiction</asp:ListItem>
-                    <asp:ListItem Value="3">Non-Fiction</asp:ListItem>
-                    <asp:ListItem Value="4">Self-Help</asp:ListItem>
+                <asp:Label ID="category" runat="server" Text="Category"></asp:Label>
+                <asp:DropDownList ID="category_name" runat="server" DataSourceID="SqlDataSource1" DataTextField="category_name" DataValueField="category_name">
+                    <asp:ListItem Value="Education">Education</asp:ListItem>
+                    <asp:ListItem Value="Fiction">Fiction</asp:ListItem>
+                    <asp:ListItem Value="Non-Fiction">Non-Fiction</asp:ListItem>
+                    <asp:ListItem Value="Self-Help">Self-Help</asp:ListItem>
                 </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [category_name] FROM [categories]"></asp:SqlDataSource>
             </p>
             <p>
 
@@ -38,7 +39,7 @@
             </p>
             <p>
 
-                <asp:TextBox ID="summary_data" runat="server" Height="402px" Width="401px"></asp:TextBox>
+                <asp:TextBox ID="book_summary" runat="server" Height="402px" Width="401px"></asp:TextBox>
             </p>
             <p>
 

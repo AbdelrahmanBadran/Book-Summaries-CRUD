@@ -27,15 +27,15 @@
                 <!--The Caousel images and captions-->
                 <div class="carousel-inner">
                     <figure class="item active">
-                        <img src="img/1.jpg" alt="Book Pic 1" />
+                        <img src="books/1.jpg" alt="Book Pic 1" />
                         <figcaption class="carousel-caption">Habits Will Change Your Life</figcaption>
                     </figure>
                     <figure class="item">
-                        <img src="img/2.jpg" alt="Book Pic 2" />
+                        <img src="books/2.jpg" alt="Book Pic 2" />
                         <figcaption class="carousel-caption">Thoughts Can Change Your Life</figcaption>
                     </figure>
                     <figure class="item">
-                        <img src="img/3.jpg" alt="Book Pic 3" />
+                        <img src="books/3.jpg" alt="Book Pic 3" />
                         <figcaption class="carousel-caption">The One Self-Help Book for All of Us</figcaption>
                     </figure>
                 </div>
@@ -58,28 +58,7 @@
         </div>
      </div>
 
-    <!--The Book View-->
-    <div class ="book-container">
-        <%--<div class=" book-slider1">--%>
-        <div>
-            <asp:PlaceHolder ID="Education" runat="server"></asp:PlaceHolder>
-        </div>
-        
-        <div>
-            <asp:PlaceHolder ID="Fiction" runat="server"></asp:PlaceHolder>
-        </div>
-
-        <div>
-            <asp:PlaceHolder ID="Non_Fiction" runat="server"></asp:PlaceHolder>
-        </div>
-
-        <div>
-            <asp:PlaceHolder ID="Self_Help" runat="server"></asp:PlaceHolder>
-        </div>
-
-    </div>
-
-    </div>
+</div>
 </asp:Content>
 
 

@@ -26,7 +26,7 @@ namespace WebsiteWAPP
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             
             string email = this.user_email.Text;
-            bool valid_email = false;
+            bool email_available = false;
 
             con.Open();
             string email_query = "SELECT * FROM users WHERE user_email ='" + email + "'";
@@ -49,11 +49,12 @@ namespace WebsiteWAPP
 
             else
             {
-                valid_email = true;
+                email_available = true;
             }
 
             con.Close();
-            return valid_email;
+
+            return email_available;
 
         }
 

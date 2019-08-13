@@ -10,78 +10,78 @@
 namespace WebsiteWAPP {
     
     
-    public partial class Site1 {
+    public partial class manageUsers {
         
         /// <summary>
-        /// form1 control.
+        /// gvBooks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.GridView gvBooks;
         
         /// <summary>
-        /// Header control.
+        /// TxtBookTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
+        protected global::System.Web.UI.WebControls.TextBox TxtBookTitle;
         
         /// <summary>
-        /// user_email control.
+        /// DropCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_email;
+        protected global::System.Web.UI.WebControls.TextBox DropCategory;
         
         /// <summary>
-        /// SignUp control.
+        /// TxtBookAuthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton SignUp;
+        protected global::System.Web.UI.WebControls.TextBox TxtBookAuthor;
         
         /// <summary>
-        /// Login control.
+        /// TxtBookPublisher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Login;
+        protected global::System.Web.UI.WebControls.TextBox TxtBookPublisher;
         
         /// <summary>
-        /// Logout control.
+        /// TxtBookISBN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Logout;
+        protected global::System.Web.UI.WebControls.TextBox TxtBookISBN;
         
         /// <summary>
-        /// Main control.
+        /// lblSuccesMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Main;
+        protected global::System.Web.UI.WebControls.Label lblSuccesMessage;
         
         /// <summary>
-        /// Footer control.
+        /// lblErrorMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
+        protected global::System.Web.UI.WebControls.Label lblErrorMessage;
     }
 }
