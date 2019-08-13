@@ -87,7 +87,7 @@ namespace WebsiteWAPP
 
             catch (Exception ex)
             {
-                Response.Write("Error: " + ex.ToString());
+                
             }
         }
 
@@ -112,7 +112,7 @@ namespace WebsiteWAPP
             }
             catch (Exception ex)
             {
-                Response.Write("Error: " + ex.ToString());
+                
             }
         }
     }

@@ -17,17 +17,9 @@ namespace WebsiteWAPP
         {
             if (!this.IsPostBack)
             {
-                if (Session["user_email"] == null)
-                {
-                    Response.Redirect("login.aspx");
-                }
-            }
-
-            else
-            {
+                string logged_in = Session["user_email"] as String;
                 DataTable dt = this.populateBooks();
                 StringBuilder html = new StringBuilder();
-                string logged_in = Session["user_email"] as String;
 
                 foreach (DataRow row in dt.Rows)
                 {
@@ -38,16 +30,18 @@ namespace WebsiteWAPP
                     html.Append("Category:<br>" + row["category_name"] + "<br><br>");
                     html.Append("Author:<br>" + row["book_author"] + "<br><br>");
                     html.Append("Publisher:<br>" + row["book_publisher"] + "<br><br>");
-                    html.Append("ISBN:<br> book_isbn <br><br>");
+                    html.Append("Publisher:<br>" + row["book_isbn"] + "<br><br>");
                     html.Append("Summary:<br>" + row["book_summary"] + "<br><br>");
 
-                    //if (logged_in == "admin@mail")
-                    
-                    html.Append("<a href=\"manageSums.aspx?book_id=" + row["book_id"] + "\">Edit</a>");
+                    if (logged_in == "admin@mail")
+                    {
+
+                        html.Append("<a href=\"manageSums.aspx?book_id=" + row["book_id"] + "\">Edit</a>");
+                    }
                     html.Append("</div>");
                 }
 
-                Education.Controls.Add(new Literal { Text = html.ToString() });
+                BookSum.Controls.Add(new Literal { Text = html.ToString() });
             }
         }
 
@@ -56,7 +50,7 @@ namespace WebsiteWAPP
             string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM books"))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM books "))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {

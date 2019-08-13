@@ -4,23 +4,9 @@
 
     <!--The Book View-->
     <div class="book-container">
-        <%--<div class=" book-slider1">--%>
         <div>
-            <asp:PlaceHolder ID="Education" runat="server"></asp:PlaceHolder>
+            <asp:PlaceHolder ID="BookSum" runat="server"></asp:PlaceHolder>
         </div>
-
-        <div>
-            <asp:PlaceHolder ID="Fiction" runat="server"></asp:PlaceHolder>
-        </div>
-
-        <div>
-            <asp:PlaceHolder ID="Non_Fiction" runat="server"></asp:PlaceHolder>
-        </div>
-
-        <div>
-            <asp:PlaceHolder ID="Self_Help" runat="server"></asp:PlaceHolder>
-        </div>
-
     </div>
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [books]"></asp:SqlDataSource>
