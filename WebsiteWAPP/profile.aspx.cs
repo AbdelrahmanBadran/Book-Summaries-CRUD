@@ -59,7 +59,7 @@ namespace WebsiteWAPP
             {
                 string logged_in = Session["user_email"] as String;
 
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE user_email LIKE '%" + logged_in + "%'"))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE user_email  =" + logged_in))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
