@@ -22,15 +22,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// fname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label fname;
-        
-        /// <summary>
         /// user_fname control.
         /// </summary>
         /// <remarks>
@@ -40,15 +31,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.TextBox user_fname;
         
         /// <summary>
-        /// lname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lname;
-        
-        /// <summary>
         /// user_lname control.
         /// </summary>
         /// <remarks>
@@ -56,15 +38,6 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox user_lname;
-        
-        /// <summary>
-        /// Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Email;
         
         /// <summary>
         /// user_email control.
@@ -85,15 +58,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.Label used_email;
         
         /// <summary>
-        /// Gender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Gender;
-        
-        /// <summary>
         /// user_gender control.
         /// </summary>
         /// <remarks>
@@ -101,15 +65,6 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList user_gender;
-        
-        /// <summary>
-        /// Password control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Password;
         
         /// <summary>
         /// user_password control.
@@ -121,15 +76,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.TextBox user_password;
         
         /// <summary>
-        /// DOB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DOB;
-        
-        /// <summary>
         /// user_dob control.
         /// </summary>
         /// <remarks>
@@ -137,15 +83,6 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox user_dob;
-        
-        /// <summary>
-        /// confirmpass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label confirmpass;
         
         /// <summary>
         /// confirm_pass control.
@@ -166,15 +103,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.CompareValidator comparePass;
         
         /// <summary>
-        /// userEdu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label userEdu;
-        
-        /// <summary>
         /// user_education control.
         /// </summary>
         /// <remarks>
@@ -182,33 +110,6 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList user_education;
-        
-        /// <summary>
-        /// Agree control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox Agree;
-        
-        /// <summary>
-        /// Terms control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink Terms;
-        
-        /// <summary>
-        /// Privacy control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink Privacy;
         
         /// <summary>
         /// sign_up control.

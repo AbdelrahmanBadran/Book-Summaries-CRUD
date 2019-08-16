@@ -1,5 +1,6 @@
 ﻿/*Sign Up Page*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ body {
 }
 
 .wrapper {
+    margin-top: 4em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -28,7 +30,7 @@ body {
     flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
-    background-color:aliceblue;
+    background-color: aliceblue;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -41,32 +43,28 @@ body {
     }
 
 
-.form-group1, .form-group2 {
+.form-cont p{
     display: flex;
     flex-direction: column;
-    margin-right: 4%;
+    margin-right: 4%;   
 }
 
-.form-group1,
-.form-group2 {
-    width: 48%;
+.long {
+    width: 360px;
+    height: 100px;
+    overflow: scroll;
+    border-radius: 4px;
 }
 
-    .form-group1,
-    .form-group2{
-        margin: 10px 0;
-        background: transparent;
-        border: 0px;
-        /*border-bottom: 2px solid black;*/
-        padding: 10px;
-        color: #c5ecfd;
-        width: 100%;
-    }
-
-/*.form-group2 {
-    height: 212px;
-}*/
-
+.form-cont p {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    /*border-bottom: 2px solid black;*/
+    padding: 10px;
+    color: #116466;
+    width: 100%;
+}
 
 .btn {
     display: block;
@@ -78,36 +76,19 @@ body {
     background-size: 200%;
     color: #fff;
     outline: none;
-    margin-top:2em;
+    margin-top: 2em;
 }
-
-::-webkit-input-placeholder {
-    /* For Chrome/Opera/Safari */
-    color: black;
-}
-
-::-moz-placeholder {
-    /* For Firefox 19*/
-    color: black;
-}
-
-:-ms-input-placeholder {
-    /* For IE */
-    color: black;
-}
-
 
 @media screen and (max-width: 600px) {
     .form-cont {
         flex-direction: column;
     }
 
-    .msg textarea {
+    .long {
         height: 80px;
     }
 
-    .input-fields,
-    .msg {
+    .form-cont p {
         width: 100%;
     }
 }

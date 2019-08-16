@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Layout.Master"  AutoEventWireup="true" CodeBehind="createSummaries.aspx.cs" Inherits="WebsiteWAPP.createSummaries" %>
 
 <asp:content contentplaceholderid="Main" runat="server">
-  
-    <div class = "form-container">
+    <link rel="stylesheet" href="createSummaries.css" />
+    <div class = "wrapper">
+        <div class="form-cont">
             <p>
                 <asp:Label ID="bookTitle" runat="server" Text="Book Title"></asp:Label>
                 <asp:TextBox ID="book_title" runat="server" required="required"></asp:TextBox>
@@ -39,11 +40,12 @@
             </p>
             <p>
 
-                <asp:TextBox ID="book_summary" runat="server" required="required" Height="402px" Width="401px"></asp:TextBox>
+                <asp:TextBox ID="book_summary"  class="long" runat="server" required="required"></asp:TextBox>
             </p>
-            <p>
-
-                <asp:Button ID="submit" runat="server" OnClick="submit_Click" Text="Submit" />
-            </p>
+            
+            <p>                
+                <asp:Button ID="submit" runat="server" OnClick="submit_Click" Text="Submit" class="btn" />                
+           </p>
+        </div>
     </div>
 </asp:content>

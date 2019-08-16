@@ -32,17 +32,6 @@ namespace WebsiteWAPP
                     foreach (DataRow row in dt.Rows)
                     {
                         html.Append("<div class=\"temp\">");
-                        
-                        //String gender = Convert.ToString(row["user_gender"]);
-
-                        //if (gender == "M")
-                        //{
-                        //    html.Append("<img src=\"images/icons8-male-user-96.png\" width=\"60\" height=\"60\">");
-                        //}
-                        //else
-                        //{
-                        //    html.Append("<img src=\"images/icons8-female-user-96.png\" width=\"60\" height=\"60\">");
-                        //}
 
                         DateTime dateandtime = (DateTime)row["user_dob"];
                         var justdate = dateandtime.ToString("dd/MM/yyyy");
@@ -50,9 +39,9 @@ namespace WebsiteWAPP
                         html.Append("<h3>" + row["user_fname"] + "</h3>");
                         html.Append("<h3>" + row["user_lname"] + "</h3>");
                         html.Append("Email:<br>" + row["user_email"] + "<br><br>");
-                        html.Append("Date of Birth:<br>" + row["user_dob"] + "<br><br>");
                         html.Append("Education:<br>" + row["user_education"] + "<br><br>");
-                        html.Append("Date of Birth:<br>" + justdate + "<br><br>");
+                        html.Append("Gender:<br>" + row["user_gender"] + "<br><br>");
+                        html.Append("Date of Birth:<br>" + justdate);
                         html.Append("</div>");
                     }
 

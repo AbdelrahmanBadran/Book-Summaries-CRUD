@@ -1,12 +1,40 @@
 ﻿/* Book Summaries Page*/
+.book-conatainer{
+    max-width: 80%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
 
 .temp {
     float: left;
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 500px;
+    margin: 1rem;
+    flex:1;
+    padding: 20px;
+    max-width:40%;
+    max-height: 100%;
+    
     background-color: blanchedalmond;
     border-radius: 10px;
+    overflow:auto;
+}
+
+    .temp h3 {
+        color: #2c3531;
+    }
+    .temp h4 {
+        color: #116466;
+    }
+
+/*    #2c3531     dark green
+    #116466     med green
+    #D9B08c     dark gold
+    #efcaa9     med gold*/
+
+@media only screen (max-width: 800px){
+    .book-container{
+        max-width: 100%;
+       justify-content:center;
+    }
 }
 

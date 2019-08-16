@@ -27,17 +27,15 @@ namespace WebsiteWAPP
                     html.Append("<div class=\"temp\">");
 
                     html.Append("<h3>" + row["book_title"] + "</h3>");
-                    html.Append("Category:<br>" + row["category_name"] + "<br><br>");
-                    html.Append("Author:<br>" + row["book_author"] + "<br><br>");
-                    html.Append("Publisher:<br>" + row["book_publisher"] + "<br><br>");
-                    html.Append("Publisher:<br>" + row["book_isbn"] + "<br><br>");
-                    html.Append("Summary:<br>" + row["book_summary"] + "<br><br>");
+                    html.Append("<h4>Category:</h4><br>" + row["category_name"] + "<br><br>");
+                    html.Append("<h4>Author:</h4><br>" + row["book_author"] + "<br><br>");
+                    html.Append("<h4>Publisher:</h4><br>" + row["book_publisher"] + "<br><br>");
+                    html.Append("<h4>ISBN:</h4><br>" + row["book_isbn"] + "<br><br>");
+                    html.Append("<h4>Summary:</h4><br>" + row["book_summary"] + "<br><br>");
 
                     if (logged_in == "admin@mail")
                     {
-                        html.Append("<div class = \"success-btn\">");
                         html.Append("<a href=\"manageSums.aspx?book_id=" + row["book_id"] + "\">Edit</a>");
-                        html.Append("</div>");
 
                     }
                     html.Append("</div>");

@@ -43,8 +43,8 @@ namespace WebsiteWAPP
             
             if (dt.Rows.Count > 0)
             {
-                used_email.Text = "Email already used";
-                used_email.ForeColor = System.Drawing.Color.Red;
+                used_email.Text = "Email already taken";
+                used_email.ForeColor = System.Drawing.Color.Black;
             }
 
             else
@@ -79,15 +79,15 @@ namespace WebsiteWAPP
                 cmd.ExecuteNonQuery();
 
                 con.Close();
-                Signup_Status.Text = "Sign Up Successfull";
-                used_email.ForeColor = System.Drawing.Color.Green;                
+                //Signup_Status.Text = "Sign Up Successfull";
+                //used_email.ForeColor = System.Drawing.Color.Green;                
                 Response.Redirect("login.aspx"); //TO SIGN IN
             }
 
             catch (Exception ex)
             {
-                Signup_Status.Text = "Sorry, Sign Up Wasn't successfull";
-                used_email.ForeColor = System.Drawing.Color.Red;
+                //Signup_Status.Text = "Sorry, Sign Up Wasn't successfull";
+                //used_email.ForeColor = System.Drawing.Color.Black;
                 Response.Redirect("signup.aspx");
             }
         }

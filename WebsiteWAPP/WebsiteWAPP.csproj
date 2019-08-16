@@ -73,6 +73,7 @@
     </Content>
     <Content Include="contact.aspx" />
     <Content Include="createSummaries.aspx" />
+    <Content Include="createSummaries.css" />
     <Content Include="Home.aspx" />
     <Content Include="books\1.jpg" />
     <Content Include="books\2.jpg" />

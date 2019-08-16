@@ -93,7 +93,7 @@ namespace WebsiteWAPP
 
         //cmd.Parameters.AddWithValue("@book_picture", null);
 
-        protected void Delete_Click(object sender, ImageClickEventArgs e)
+        protected void Delete_Click1(object sender, EventArgs e)
         {
             try
             {

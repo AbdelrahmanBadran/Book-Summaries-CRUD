@@ -76,13 +76,13 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.DropDownList category_name;
         
         /// <summary>
-        /// SqlDataSource2 control.
+        /// SqlDataSource3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
         
         /// <summary>
         /// publisher control.
@@ -139,6 +139,15 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.TextBox book_summary;
         
         /// <summary>
+        /// SqlDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        
+        /// <summary>
         /// Update control.
         /// </summary>
         /// <remarks>
@@ -148,13 +157,13 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.Button Update;
         
         /// <summary>
-        /// Delete control.
+        /// Delete1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton Delete;
+        protected global::System.Web.UI.WebControls.Button Delete1;
         
         /// <summary>
         /// SqlDataSource1 control.
