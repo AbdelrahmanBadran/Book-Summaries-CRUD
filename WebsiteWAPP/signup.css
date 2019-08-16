@@ -1,0 +1,28 @@
+﻿/*Sign Up Page*/
+body {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 2%;
+    flex-wrap: wrap;
+    background: #1c1b6d;
+    border-radius: 5px;
+}
+
+    .signup-container div{
+        flex: 2 40%;
+        justify-content: center;
+        align-content: center;
+    }
+
+/*Sign In*/
+.checkbox {
+    margin-left: 160px;
+}

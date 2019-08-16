@@ -13,14 +13,18 @@ namespace WebsiteWAPP
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            //user_email.Text = Session["user_email"].ToString();
+            //string userEmail = Session["user_email"] as string;
 
             if (Session["user_email"] != null)
             {
-                //user_email.Text = Session["user_email"].ToString();
-                //user_email.Enabled = false;
-                //user_email.Visible = false;
-                //string userEmail = Session["user_email"] as string;
+                Login.Style.Add("display", "none");
+                SignUp.Style.Add("display", "none");
                 //user.Text = (user_email != null) ? "Account" : "Guest";
+            }
+            else
+            {
+                Logout.Style.Add("display", "none");
             }
 
         }

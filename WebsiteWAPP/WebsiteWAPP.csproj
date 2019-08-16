@@ -83,6 +83,7 @@
     <Content Include="img\delete.png" />
     <Content Include="img\save.png" />
     <Content Include="login.aspx" />
+    <Content Include="login.css" />
     <Content Include="manageBooks.aspx" />
     <Content Include="manageSums.aspx" />
     <Content Include="other.css" />
@@ -90,7 +91,7 @@
     <Content Include="signup.aspx" />
     <Content Include="libman.json" />
     <Content Include="masterStyle.css" />
-    <Content Include="signupStyle.css" />
+    <Content Include="signup.css" />
     <Content Include="summaries.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

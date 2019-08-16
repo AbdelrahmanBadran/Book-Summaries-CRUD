@@ -54,7 +54,6 @@ namespace WebsiteWAPP
             {
                 hidden_label.Text = "Incorrect email or password";
                 hidden_label.ForeColor = System.Drawing.Color.Black;
-                Response.Redirect("login.aspx");
             }
             con.Close();
         }

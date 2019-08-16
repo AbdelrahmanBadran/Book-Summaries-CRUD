@@ -4,17 +4,17 @@
    
     <p>
     <asp:Label ID="FullName" runat="server" Text="Full Name"></asp:Label>
-    <asp:TextBox ID="guest_full_name" runat="server"></asp:TextBox>
+    <asp:TextBox ID="guest_full_name" runat="server" required="required"></asp:TextBox>
     </p>
             <p>
 
                 <asp:Label ID="Email" runat="server" Text="Email"></asp:Label>
-                <asp:TextBox ID="guest_email" runat="server"></asp:TextBox>
+                <asp:TextBox ID="guest_email" runat="server" required="required"></asp:TextBox>
             </p>           
     <p>
 
                 <asp:Label ID="about" runat="server" Text="About"></asp:Label>
-                <asp:TextBox ID="guest_about" runat="server"></asp:TextBox>
+                <asp:TextBox ID="guest_about" runat="server" required="required"></asp:TextBox>
             </p>
     <p>
 
@@ -22,7 +22,7 @@
     </p>
     <p>
 
-        <asp:TextBox ID="guest_message" runat="server" Height="402px" Width="401px"></asp:TextBox>
+        <asp:TextBox ID="guest_message" runat="server" required="required" Height="402px" Width="401px"></asp:TextBox>
     </p>
     <p>
 

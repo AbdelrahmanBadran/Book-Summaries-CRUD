@@ -42,7 +42,7 @@
                 <ul class="top-right">
                 
                     <li><a><asp:LinkButton ID="SignUp" OnClick="Signup_Click" runat="server">Sign Up</asp:LinkButton></a></li>
-                <li><a><asp:LinkButton ID="Login" OnClick="Login_Click"  runat="server">Login</asp:LinkButton></a></li>
+                    <li><a><asp:LinkButton ID="Login" OnClick="Login_Click"  runat="server">Login</asp:LinkButton></a></li>
                     <li><a><asp:LinkButton ID="Logout" OnClick="Logout_Click" runat="server">Logout</asp:LinkButton></a></li>
                 
 

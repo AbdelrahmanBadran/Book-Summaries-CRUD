@@ -22,15 +22,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// email_label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label email_label;
-        
-        /// <summary>
         /// user_email control.
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox user_email;
-        
-        /// <summary>
-        /// pass_label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label pass_label;
         
         /// <summary>
         /// user_password control.
@@ -58,15 +40,6 @@ namespace WebsiteWAPP {
         protected global::System.Web.UI.WebControls.TextBox user_password;
         
         /// <summary>
-        /// hidden_label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hidden_label;
-        
-        /// <summary>
         /// Btn_Sign_In control.
         /// </summary>
         /// <remarks>
@@ -74,6 +47,15 @@ namespace WebsiteWAPP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Btn_Sign_In;
+        
+        /// <summary>
+        /// hidden_label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label hidden_label;
         
         /// <summary>
         /// Forogot_Pass control.

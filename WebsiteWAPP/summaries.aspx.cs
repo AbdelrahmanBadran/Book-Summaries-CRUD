@@ -35,8 +35,10 @@ namespace WebsiteWAPP
 
                     if (logged_in == "admin@mail")
                     {
-
+                        html.Append("<div class = \"success-btn\">");
                         html.Append("<a href=\"manageSums.aspx?book_id=" + row["book_id"] + "\">Edit</a>");
+                        html.Append("</div>");
+
                     }
                     html.Append("</div>");
                 }
@@ -65,16 +67,5 @@ namespace WebsiteWAPP
                 }
             }
         }
-
-        //protected void LinkButton1_Click(object sender, EventArgs e)
-        //{
-        //    Response.Redirect("addNewContacts.aspx");
-        //}
-
-        //protected void LinkButton2_Click(object sender, EventArgs e)
-        //{
-        //    this.Session.Abandon();
-        //    Response.Redirect("login.aspx");
-        //}
     }
 }
